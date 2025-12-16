@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Cucumber Tests">
+        <classes>
+            <!-- Tu runner de Cucumber con TestNG -->
+            <class name="com.company.reqres.bdd.runner.TestNgCucumberRunner"/>
+        </classes>
+    </test>
+</suite>
