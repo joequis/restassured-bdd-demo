@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
         "html:target/cucumber-report.html",
         "json:target/cucumber-report.json"},
         monochrome = true,
-        tags = "@Api-Usuarios"
+        tags = ""
         )
 public class TestNgCucumberRunner extends AbstractTestNGCucumberTests {
 
