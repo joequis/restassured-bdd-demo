@@ -2,6 +2,7 @@
 package com.company.reqres.bdd.steps;
 
 import com.company.reqres.infra.config.ConfigLoader;
+import com.company.reqres.model.users.UserResponseDto;
 import com.company.reqres.service.UsersFlow;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -10,6 +11,8 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -23,6 +26,7 @@ public class UsersSteps {
     private static final Logger log = LoggerFactory.getLogger(UsersSteps.class);
     private final UsersFlow flow = new UsersFlow();
     private Response lastResponse;
+    private UserResponseDto userDto;
 
     @Before
     public void beforeScenario() {
@@ -30,10 +34,10 @@ public class UsersSteps {
         ConfigLoader.load(env);
     }
 
-    @When("consulto la lista de usuarios de la pagina {int}")
-    public void consultoListaUsuarios(int page) {
-        log.info("Listar los usuarios de la página {}", page);
-        lastResponse = flow.listarUsuarios(page);
+    @When("consulto la lista de usuarios")
+    public void consultoListaUsuarios() {
+        log.info("Listar los usuarios");
+        lastResponse = flow.listarUsuarios();
     }
 
     @Then("el codigo de estado es {int}")
@@ -48,9 +52,9 @@ public class UsersSteps {
         assertThat(lastResponse.jsonPath().getList("data")).isNotEmpty();
     }
 
-    @When("creo un usuario con Title {string}, Body {string} y Id {string}")
-    public void creoUsuario(String title, String body1, String userId) {
-        lastResponse = flow.crearUsuario(title, body1, userId);
+    @When("creo un usuario con Nombre {string}, Usuario {string} y Email {string}")
+    public void creoUsuario(String name, String username, String email) {
+        lastResponse = flow.crearUsuario(name, username, email);
     }
 
     @And("el nombre devuelto es {string} y el trabajo {string}")
@@ -58,4 +62,50 @@ public class UsersSteps {
         assertThat(lastResponse.jsonPath().getString("name")).isEqualTo(expectedName);
         assertThat(lastResponse.jsonPath().getString("job")).isEqualTo(expectedJob);
     }
+
+    @When("busco el usuario por username {string}")
+    public void buscoUsuarioPorUsername(String username) {
+        lastResponse = flow.buscarUsuarioPorUsername(username);
+    }
+
+    @And("la respuesta contiene al menos un usuario")
+    public void respuestaContieneAlMenosUnUsuario() {
+        assertThat(lastResponse.jsonPath().getList("$")).isNotEmpty();
+    }
+
+    @And("el primer usuario tiene username {string}")
+    public void primerUsuarioTieneUsername(String expectedUsername) {
+        var jp = lastResponse.jsonPath();
+        String actual = jp.getString("[0].username");
+        assertThat(actual).isEqualTo(expectedUsername);
+    }
+
+    @When("busco el usuario por id {int}")
+    public void buscoUsuarioPorId(int id) {
+        //userDto = flow.buscarUsuarioPorId(id);
+        lastResponse = flow.buscarUsuarioPorId(id);
+        userDto = lastResponse.as(UserResponseDto.class);
+
+    }
+
+        @And("la respuesta del usuario incluye los parametros name, username y email")
+        public void validarClavesBasicasUsuario() {
+            /*Map<String, Object> root = lastResponse.jsonPath().getMap("$");
+            assertThat(root)
+                    .as("La respuesta debe contener las claves básicas del usuario")
+                    .containsKeys("name", "username", "email");*/
+
+            assertThat(userDto).as("El cuerpo debe mapear al DTO de usuario").isNotNull();
+            assertThat(userDto.name).as("name no debe ser nulo/blank").isNotBlank();
+            assertThat(userDto.username).as("username con formato permitido").matches("[A-Za-z0-9_]+");
+            assertThat(userDto.email).as("email válido").matches("^[\\w.%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$");
+
+
+            //mas estricto que un isNotEmpty()
+            //assertThat(userDto.name).isNotBlank();//no null no vacio, no full espacios en blanco
+            //Solo letras (mayúsculas y minúsculas), números y guiones bajos _
+            //assertThat(userDto.username).matches("[A-Za-z0-9_]+");
+        }
+
+
 }

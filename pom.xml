@@ -86,6 +86,62 @@
             <version>${logback.version}</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
+        <!-- Jackson Databind (para trabajar con objetos y JSON) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
+        <!-- Jackson Annotations (para usar @JsonProperty, @JsonIgnoreProperties, etc.) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
+        <dependency>
+        <groupId>jakarta.annotation</groupId>
+        <artifactId>jakarta.annotation-api</artifactId>
+        <version>2.1.1</version>
+        </dependency>
+
+            <!-- API de Jakarta Bean Validation -->
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+
+            <!-- Implementación de Bean Validation (runtime) -->
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>8.0.1.Final</version>
+            </dependency>
+
+            <!-- (Opcional) Soporte de EL para mensajes de validación -->
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>jakarta.el</artifactId>
+                <version>4.0.2</version>
+            </dependency>
+
+            <!-- (Opcional) Java Time -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>2.17.1</version>
+            </dependency>
+
+
     </dependencies>
 
     <build>
@@ -155,8 +211,6 @@
             <properties><env>qa</env></properties>
         </profile>
     </profiles>
-
-
 
 
 </project>
