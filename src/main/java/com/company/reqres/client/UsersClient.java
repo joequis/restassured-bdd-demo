@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
  */
 public class UsersClient {
 
-    public Response listUsers(int page) {
+    public Response listUsers() {
         return given()
                 .spec(HttpSpec.base())
                 //.header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
@@ -35,9 +35,35 @@ public class UsersClient {
                 .body(body)
                 .when()
                 //.post("/api/users")
-                .post("/posts")
+                .post("/users")
                 .then()
                 .log().body()
                 .extract().response();
     }
+
+    //GET /users?username={username}
+    public Response getUsersByUsername(String username) {
+        return given()
+                .spec(HttpSpec.base())
+                .log().params()
+                .queryParam("username", username)
+                .when()
+                .get("/users")
+                .then()
+                .log().body()
+                .extract().response();
+    }
+
+    //GET /users/{id}
+    public Response getUserById(int id) {
+        return given()
+                .spec(HttpSpec.base())
+                .when()
+                .get("/users/{id}", id)
+                .then()
+                .log().body()
+                .extract().response();
+    }
+
+
 }
