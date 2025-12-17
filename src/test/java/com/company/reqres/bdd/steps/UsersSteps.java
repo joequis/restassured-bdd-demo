@@ -9,6 +9,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
@@ -21,6 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class UsersSteps {
 
+    private static final Logger log = LoggerFactory.getLogger(UsersSteps.class);
     private final UsersFlow flow = new UsersFlow();
     private Response lastResponse;
     private UserResponseDto userDto;
@@ -33,16 +36,19 @@ public class UsersSteps {
 
     @When("consulto la lista de usuarios")
     public void consultoListaUsuarios() {
+        log.info("Listar los usuarios");
         lastResponse = flow.listarUsuarios();
     }
 
     @Then("el codigo de estado es {int}")
     public void elCodigoDeEstadoEs(int expected) {
+        log.info("El código de estado debe ser {}", expected);
         assertThat(lastResponse.statusCode()).isEqualTo(expected);
     }
 
     @And("la lista de usuarios no esta vacia")
     public void laListaDeUsuariosNoEstaVacia() {
+        log.info("Valido que la lista no está vacia");
         assertThat(lastResponse.jsonPath().getList("data")).isNotEmpty();
     }
 
