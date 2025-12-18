@@ -3,7 +3,7 @@ Feature: Usuarios (ReqRes)
   Quiero consultar y crear usuarios
   Para validar endpoints simples GET y POST
 
-  @ListarUsuarios @Api-Usuariosx
+  @ListarUsuarios @Api-Usuarios
   Scenario: Listar usuarios (GET) devuelve 200 y data
     When consulto la lista de usuarios
     Then el codigo de estado es 200
