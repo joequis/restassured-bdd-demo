@@ -1,6 +1,7 @@
 
 package com.company.reqres.bdd.steps;
 
+import com.company.reqres.assertions.UserAssert;
 import com.company.reqres.infra.config.ConfigLoader;
 import com.company.reqres.model.users.UserResponseDto;
 import com.company.reqres.service.UsersFlow;
@@ -25,6 +26,7 @@ public class UsersSteps {
 
     private static final Logger log = LoggerFactory.getLogger(UsersSteps.class);
     private final UsersFlow flow = new UsersFlow();
+
     private Response lastResponse;
     private UserResponseDto userDto;
 
@@ -90,21 +92,17 @@ public class UsersSteps {
 
         @And("la respuesta del usuario incluye los parametros name, username y email")
         public void validarClavesBasicasUsuario() {
-            /*Map<String, Object> root = lastResponse.jsonPath().getMap("$");
-            assertThat(root)
-                    .as("La respuesta debe contener las claves básicas del usuario")
-                    .containsKeys("name", "username", "email");*/
-
-            assertThat(userDto).as("El cuerpo debe mapear al DTO de usuario").isNotNull();
-            assertThat(userDto.name).as("name no debe ser nulo/blank").isNotBlank();
-            assertThat(userDto.username).as("username con formato permitido").matches("[A-Za-z0-9_]+");
-            assertThat(userDto.email).as("email válido").matches("^[\\w.%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$");
 
 
-            //mas estricto que un isNotEmpty()
-            //assertThat(userDto.name).isNotBlank();//no null no vacio, no full espacios en blanco
-            //Solo letras (mayúsculas y minúsculas), números y guiones bajos _
-            //assertThat(userDto.username).matches("[A-Za-z0-9_]+");
+           // assertThat(userDto).as("El cuerpo debe mapear al DTO de usuario").isNotNull();
+           // assertThat(userDto.name).as("name no debe ser nulo/blank").isNotBlank();
+           // assertThat(userDto.username).as("username con formato permitido").matches("[A-Za-z0-9_]+");
+           //s assertThat(userDto.email).as("email válido").matches("^[\\w.%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$");
+
+
+
+            //Uso de AssertJ
+            UserAssert.assertThat(userDto).isValid();
         }
 
 

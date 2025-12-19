@@ -2,6 +2,7 @@
 package com.company.reqres.client;
 
 import com.company.reqres.infra.http.HttpSpec;
+import com.company.reqres.infra.routes.Routes;
 import com.company.reqres.model.users.CreateUserRequest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -23,7 +24,11 @@ public class UsersClient {
                 //.queryParam("page", page)
                 .when()
                 //.get("/api/users")
-                .get("/users")
+               // .get("/users")
+                // .get("/api/users")
+
+                //mejora UNO
+                .get(Routes.USERS)
                 .then()
                 .log().body()
                 .extract().response();
@@ -35,7 +40,9 @@ public class UsersClient {
                 .body(body)
                 .when()
                 //.post("/api/users")
-                .post("/users")
+                //.post("/users")
+
+                .post(Routes.USERS)
                 .then()
                 .log().body()
                 .extract().response();
@@ -48,7 +55,8 @@ public class UsersClient {
                 .log().params()
                 .queryParam("username", username)
                 .when()
-                .get("/users")
+                //.get("/users")
+                .get(Routes.USERS)
                 .then()
                 .log().body()
                 .extract().response();
@@ -59,7 +67,8 @@ public class UsersClient {
         return given()
                 .spec(HttpSpec.base())
                 .when()
-                .get("/users/{id}", id)
+               // .get("/users/{id}", id)
+                .get(Routes.USER_BY_ID, id)
                 .then()
                 .log().body()
                 .extract().response();

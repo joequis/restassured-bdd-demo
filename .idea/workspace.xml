@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="356f8c03-2c3f-4d8a-abf0-ebc5d70c612e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/reqres/assertions/UserAssert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/reqres/infra/routes/Routes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/reqres/infra/routes/Urls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/bin/allure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/bin/allure.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/config/allure-cucumber.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/config/allure-junit.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/config/allure.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/allure-commandline-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/allure-generator-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/allure-model-2.13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/allure-plugin-api-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/allure1-model-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-codec-1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-collections4-4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-lang3-3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/commons-text-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/config/jetty-logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/config/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/flexmark-0.50.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/flexmark-util-0.50.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/httpclient-4.5.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/httpcore-4.4.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-core-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-dataformat-xml-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-dataformat-yaml-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jackson-module-jaxb-annotations-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jaxb-utils-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jcommander-1.78.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jetty-http-9.4.20.v20190813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jetty-io-9.4.20.v20190813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jetty-server-9.4.20.v20190813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/jetty-util-9.4.20.v20190813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/opencsv-4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/properties-2.0.RC5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/slf4j-api-1.7.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/slf4j-log4j12-1.7.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/snakeyaml-1.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/stax2-api-3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/tika-core-1.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/lib/woodstox-core-5.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/behaviors-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/behaviors-plugin/behaviors-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/behaviors-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/custom-logo-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/custom-logo-plugin/custom-logo-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/custom-logo-plugin/static/custom-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/custom-logo-plugin/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/jira-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/allure-jira-commons-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/converter-jackson-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/jackson-core-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/okhttp-3.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/okio-1.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/jira-plugin/lib/retrofit-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/junit-xml-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/junit-xml-plugin/junit-xml-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/packages-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/packages-plugin/packages-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/packages-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/screen-diff-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/screen-diff-plugin/screen-diff-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/screen-diff-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/screen-diff-plugin/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/trx-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/trx-plugin/trx-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xctest-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xctest-plugin/lib/xmlwise-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xctest-plugin/xctest-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/allure-jira-commons-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/converter-jackson-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/jackson-core-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/okhttp-3.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/okio-1.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/lib/retrofit-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xray-plugin/xray-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xunit-xml-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.13.9/plugins/xunit-xml-plugin/xunit-xml-plugin-2.13.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/098a45f4-3b41-4e3b-9b5b-2f0cc68be264-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/17d3d948-35c6-466c-be8a-445b92590e72-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/223a898f-2642-4de8-88b4-db13b8924abe-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/32994bed-3fa8-435a-9b10-6a49fed06da9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4eab3260-ee9e-4a91-91b1-80e3b5d4089d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5124e4fc-f40a-4199-af3a-5ab89e013194-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/540fce38-dd34-426f-8ed9-3d94f11a8668-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/566de9b6-b65d-4d31-9d8f-a0797967249a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/681f27d4-8a15-485c-8d07-35764fa9e7ee-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8720ef4d-c48f-455c-bcda-d161c9c110ac-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8b0b4ea1-f4ad-4923-ba45-9ce310f5badb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8b5593ab-4f41-4a42-8904-0351c5b60f6b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8d7f8bfe-cbb2-4c0e-a6c3-1125f593f017-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9a9b7402-12e4-4e22-bb7d-0fe1fc719c1f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9b6041fd-8175-4867-a236-760feda7ee66-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/af503e12-d330-41b2-bb4b-d276fe484ded-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/beb755d9-cfde-4341-89d2-4448897bddff-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c114b474-d8a2-46c4-a9a9-67f7cfccbb74-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c7712a9b-1d32-4b3b-b1a5-5ce724c01bea-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d636d358-af38-4568-9586-7172bbd117d2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d6c3ef4e-1412-4dce-98e1-c76dd06857ff-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d83fd49d-b2a2-4f45-a1c5-351e5d4215c1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/da54afa7-14fe-4cbe-8120-b4ad80215d1e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e08ec4a6-0d3e-4cd2-bb71-89afc3724acb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/edfbfe00-e315-4b33-a77e-00b221c7c4d7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fbcba0b5-ee45-44a7-9394-98d5dfb4c401-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fbcbd4e2-8b40-4c1e-9db2-e7d0e59a45d5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/reqres/client/UsersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/reqres/client/UsersClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/reqres/infra/http/HttpSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/reqres/infra/http/HttpSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/reqres/bdd/steps/UsersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/reqres/bdd/steps/UsersSteps.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="371atWRaZa3pC3gSE3krGmyEAif" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Scenario: Buscar usuario por id (GET) devuelve 200 y valida campos básicos.executor": "Run",
+    "Cucumber Java.Scenario: Listar usuarios (GET) devuelve 200 y data.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/AUTOM/restassured-bdd-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Buscar usuario por id (GET) devuelve 200 y valida campos básicos">
+    <configuration name="Scenario: Buscar usuario por id (GET) devuelve 200 y valida campos básicos" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/users.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoRestAsure" />
+      <option name="NAME_FILTER" value="^Buscar usuario por id \(GET\) devuelve 200 y valida campos básicos$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Buscar usuario por id \(GET\) devuelve 200 y valida campos básicos$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Buscar usuario por id (GET) devuelve 200 y valida campos básicos" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Listar usuarios (GET) devuelve 200 y data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/users.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoRestAsure" />
+      <option name="NAME_FILTER" value="^Listar usuarios \(GET\) devuelve 200 y data$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Listar usuarios \(GET\) devuelve 200 y data$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Listar usuarios (GET) devuelve 200 y data" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Buscar usuario por id (GET) devuelve 200 y valida campos básicos" />
+        <item itemvalue="Cucumber Java.Scenario: Listar usuarios (GET) devuelve 200 y data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="356f8c03-2c3f-4d8a-abf0-ebc5d70c612e" name="Changes" comment="" />
+      <created>1766073245935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766073245935</updated>
+      <workItem from="1766073246934" duration="4317000" />
+      <workItem from="1766153091309" duration="1446000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

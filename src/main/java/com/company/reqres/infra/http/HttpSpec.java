@@ -2,6 +2,7 @@
 package com.company.reqres.infra.http;
 
 import com.company.reqres.infra.config.ConfigLoader;
+import com.company.reqres.infra.routes.Urls;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.specification.RequestSpecification;
@@ -16,7 +17,7 @@ public final class HttpSpec {
 
     public static RequestSpecification base() {
         if (cached == null) {
-            String baseUrl = ConfigLoader.get("base.url");
+            String baseUrl = Urls.getBaseUrl();  //aca la mejora
             cached = new RequestSpecBuilder()
                     .setBaseUri(baseUrl)
                     .addHeader("Content-Type", "application/json; charset=UTF-8")
