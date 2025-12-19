@@ -14,9 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <restassured.version>5.4.0</restassured.version>
         <cucumber.version>7.16.1</cucumber.version>
-        <testng.version>7.9.0</testng.version>
         <jackson.version>2.17.1</jackson.version>
         <surefire.version>3.5.0</surefire.version>
+        <junit.version>4.13.2</junit.version>
+        <serenity.version>4.1.4</serenity.version>
         <!-- Valor por defecto para que IntelliJ no marque ${env} en rojo -->
         <env>dev</env>
         <slf4j.version>2.0.12</slf4j.version>
@@ -50,18 +51,33 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Dependencias para sistema de reporte con serenity report -->
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.version}</version>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>${serenity.version}</version> <!-- Usa la versión estable más reciente -->
             <scope>test</scope>
         </dependency>
 
-        <!-- TestNG -->
+        <!-- Adaptador de Serenity para usar con JUnit (si usas JUnit) -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+            <version>${serenity.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-cucumber</artifactId>
+            <version>${serenity.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -171,37 +187,27 @@
             </configuration>
         </plugin>
 
-        <!-- Genera el reporte HTML a partir del JSON de Cucumber -->
-        <plugin>
-            <groupId>net.masterthought</groupId>
-            <artifactId>maven-cucumber-reporting</artifactId>
-            <version>5.8.0</version>
-            <executions>
-                <execution>
-                    <id>generate-cucumber-report</id>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>generate</goal>
-                    </goals>
-                    <configuration>
-                        <!-- Ruta del JSON generado por Cucumber -->
-                        <jsonFiles>
-                            <param>target/cucumber-report.json</param>
-                        </jsonFiles>
-                        <!-- Carpeta donde se crea el HTML -->
-                        <outputDirectory>target/cucumber-html-reports</outputDirectory>
-                        <buildNumber>1</buildNumber>
-                        <projectName>Demo API Tests</projectName>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-
         <!-- Genera documentacion web con el javadoc en archivo target/site/apidocs/index.htnl -->
         <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.6.3</version>
+        </plugin>
+
+        <!-- Para generar reporte con serenity report -->
+        <plugin>
+            <groupId>net.serenity-bdd.maven.plugins</groupId>
+            <artifactId>serenity-maven-plugin</artifactId>
+            <version>${serenity.version}</version>
+            <executions>
+                <execution>
+                    <id>serenity-reports</id>
+                    <phase>post-integration-test</phase>
+                    <goals>
+                        <goal>aggregate</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
 
     </plugins>
